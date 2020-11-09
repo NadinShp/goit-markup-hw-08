@@ -580,6 +580,20 @@ p {
   align-items: flex-start;
 }
 
+.project-list__signature {
+  padding-top: 24px 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .project-list__signature {
+    padding: 0;
+  }
+}
+
+.project-list__signature:hover {
+  text-decoration: none;
+}
+
 .project-list__item {
   border: 1px solid #eeeeee;
 }

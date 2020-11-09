@@ -1,0 +1,103 @@
+.advantage {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.143;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: $color-title;
+    }
+    &-description {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.714;
+      letter-spacing: 0.03em;
+      color: $color-additional;
+
+      @media screen and (min-width: 768px) {
+        width: 354px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 270px;
+        margin-bottom: 0;
+      }
+    }
+    &-item--antenna {
+      @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+      }
+    }
+    &__list-item--clock {
+      @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+      }
+    }
+
+    &-item--antenna::before {
+      content: "";
+      display: block;
+      background-image: url("../images/advantages/antenna.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      height: 120px;
+    }
+    &-item--clock::before {
+      content: "";
+      display: block;
+      background-image: url("../images/advantages/clock.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      height: 120px;
+    }
+    &-item--diagram::before {
+      content: "";
+      display: block;
+      background-image: url("../images/advantages/diagram.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      height: 120px;
+    }
+    &-item--astronaut::before {
+      content: "";
+      display: block;
+      background-image: url("../images/advantages/astronaut.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #f5f4fa;
+      border-radius: 4px;
+      margin-bottom: 30px;
+      height: 120px;
+    }
+    &-item:not(:last-child) {
+      @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

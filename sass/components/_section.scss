@@ -1,0 +1,31 @@
+.section {
+  padding-top: 60px;
+  //  @media screen and (min-width: 480px) {
+  padding-bottom: 60px;
+  //}
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__footer {
+    @media screen and (min-width: 1200px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+  }
+  &__our-works {
+    padding-top: 0;
+    padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 60px;
+    }
+  }
+  &__portfolio {
+    padding-top: 60px;
+    padding-bottom: 0;
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 94px;
+    }
+  }
+}

@@ -134,10 +134,9 @@
     padding: 63px 24px;
   }
 }
-.project-list__signature {
-  padding: 20px 24px;
-}
+
 .project-list__title {
+  font-family: $main-font;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

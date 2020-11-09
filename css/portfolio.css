@@ -515,14 +515,6 @@ p {
     }
   }
 }*/
-.header-portfolio {
-  /* &__container {
-    display: flex;
-    align-items: center;
-    padding: 25px 0;
-  }*/
-}
-
 @media screen and (min-width: 768px) {
   .header-portfolio {
     border-bottom: 1px solid #ececec;
@@ -694,11 +686,8 @@ p {
   }
 }
 
-.project-list__signature {
-  padding: 20px 24px;
-}
-
 .project-list__title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;

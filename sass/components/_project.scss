@@ -53,14 +53,15 @@
   align-items: flex-start;
 
   &__signature {
-    padding-top: 24px 20px;
-
-    @media screen and (min-width: 1200px) {
-      padding: 0;
+    padding: 5%;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    @media screen and (min-width: 768px) {
+      padding: 20px 24px;
     }
   }
   &__item {
-    border: 1px solid #eeeeee;
     @media screen and (max-width: 767px) {
       width: 450px;
     }
@@ -88,8 +89,7 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: $color-title;
-    margin-top: 20px;
-    padding: 0px 24px;
+    margin-bottom: 4px;
   }
   &__description {
     font-weight: 400;
@@ -97,32 +97,33 @@
     line-height: 1.875;
     letter-spacing: 0.03em;
     color: $color-additional;
-    margin-top: 4px;
-    padding-left: 24px;
-    padding-bottom: 20px;
   }
 }
 .project-link {
   width: 100%;
   display: inline-block;
   text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
     text-decoration: none;
   }
-
-  &:hover .overlay-wrap {
-    transform: translateY(0);
-  }
 }
+
 .overlay-add {
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  color: #fff;
+  &:hover .overlay-wrap {
+    transform: translateY(0);
+  }
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 .overlay-wrap {
+  padding: 5%;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -131,12 +132,12 @@
   display: flex;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition-property: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 767px) {
+  @media screen and (min-width: 480px) {
     padding: 77px 24px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     padding: 49px 24px;
   }
   @media screen and (min-width: 1200px) {
@@ -163,9 +164,17 @@
 .project__overlay {
   font-family: $main-font;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.55;
   letter-spacing: 0.03em;
 
   color: #ffffff;
+  @media screen and (min-width: 480px) {
+    font-size: 18px;
+  }
+}
+.transition-hover {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

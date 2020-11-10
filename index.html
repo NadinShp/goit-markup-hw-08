@@ -9,54 +9,54 @@
         rel="stylesheet"/>
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<body modal-open>
+    <body>
   <!--Header-->
-  <header class="header">
-    <div class="container header__container">
-        <nav class="wrapper-logo-btn">
-            <a class="logo link" href="./index.html" lang="en"><span class="logo__color">Web</span>Studio</a>
-            <button type="button"
-            class="menu-button"
-            aria-controls="menu-container"
-            aria-expanded="false"
-            data-menu-button>
-                <svg width="40" height="40" aria-label="Список навигационного меню">
+        <header class="header">
+          <div class="container header__container">
+            <nav class="wrapper-logo-btn">
+                <a class="logo link" href="./index.html" lang="en"><span class="logo__color">Web</span>Studio</a>
+                <button type="button"
+                class="menu-button"
+                 aria-controls="menu-container"
+                aria-expanded="false"
+                data-menu-button>
+                    <svg width="40" height="40" aria-label="Список навигационного меню">
                     <use class="menu-button__icon" href="./images/sprite.svg#icon-menu"></use>
                     <use class="menu-button__close" href="./images/sprite.svg#icon-close"></use>
-                </svg>
-            </button>  
-            <div class="menu-container" id="menu-container" data-menu>
-                <div class="navigation">
-                    <ul class="navigation__list list">
-                        <li class="navigation__list-item">
-                            <a class="navigation__list-link link navigation__list-link--active" href="">Cтудия</a></li>
-                        <li class="navigation__list-item">
-                            <a class="navigation__list-link link" href="./portfolio.html">Портфолио</a></li>
-                        <li class="navigation__list-item">
-                            <a class="navigation__list-link link" href="">Контакты</a></li>
-                    </ul>
-                </div>
-                <address class="address header__address">
-                    <ul class="address__list list">
-                        <li class="address__list-item">
-                         <a class="address__list-link link" href="mailto:info@devstudio.com">
-                             <svg class="address__list-svg" width="16" height="12">
+                    </svg>
+                </button>  
+                <div class="menu-container" id="menu-container" data-menu>
+                    <div class="navigation">
+                        <ul class="navigation__list list">
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link link navigation__list-link--active" href="">Cтудия</a></li>
+                          <li class="navigation__list-item">
+                                <a class="navigation__list-link link" href="./portfolio.html">Портфолио</a></li>
+                            <li class="navigation__list-item">
+                                <a class="navigation__list-link link" href="">Контакты</a></li>
+                        </ul>
+                   </div>
+                    <address class="address header__address">
+                        <ul class="address__list list">
+                            <li class="address__list-item">
+                             <a class="address__list-link link" href="mailto:info@devstudio.com">
+                                 <svg class="address__list-svg" width="16" height="12">
                                 <use href="./images/sprite.svg#envelope"></use>
-                            </svg>
-                            info@devstudio.com</a></li>
-                        <li class="address__list-item">
-                         <a class="address__list-link link" href="tel:+380961111111">
-                            <svg class="address__list-svg" width="10" height="16">
+                                </svg>
+                                   info@devstudio.com</a></li>
+                            <li class="address__list-item">
+                             <a class="address__list-link link" href="tel:+380961111111">
+                                <svg class="address__list-svg" width="10" height="16">
                                 <use href="./images/sprite.svg#smartphone"></use>
-                            </svg>
-                            +38 096 111 11 11</a></li>
-                    </ul>
-                </address>
-            </div>
-        </nav>
-    </div>
-  </header>
-  <main>
+                                </svg>
+                                 +38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </nav>
+          </div>
+         </header>
+    <main>
    <!--HERO-->
     <div class="hero">
         <div class="container hero__container">
@@ -420,7 +420,7 @@
         </div>
 
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal  >
         <div class="backdrop__wrapper">
             <div class="modal-window">
                 <h2 class="modal-window__title">Оставьте свои данные, мы вам перезвоним</h2>
@@ -440,34 +440,33 @@
                                 <use href="./images/sprite.svg#icon-phone"></use>
                             </svg>
                         
-                    </label>
-                    <label class="modal-form__label">
-                        <span class="modal-form__wrapper">Почта</span>
+                       </label>
+                       <label class="modal-form__label">
+                         <span class="modal-form__wrapper">Почта</span>
                             <input type="email" name="user-email" class="modal-form__input" required>
-                            <svg class="modal-form__svg" width="18px" height="18px">
+                               <svg class="modal-form__svg" width="18px" height="18px">
                                 <use href="./images/sprite.svg#icon-email"></use>
-                            </svg>
-                        
-                    </label>
-                    <label class="modal-form__label">
-                        <span class="modal-form__wrapper">Комментарий</span>
-                        <textarea name="user-message" class="modal-form__message" placeholder="Введите текст"></textarea>
-                    </label>
-                    <input id="check-policy" type="checkbox" class="modal-form__policy visually-hidden" name="policy" value="accept-policy">
-                    <label class="modal-form__label-policy" for="check-policy">
-                        Соглашаюсь с рассылкой и принимаю &nbsp;<a class="underline" href="#">Условия договора</a>
-                    </label>
-                    <button type="submit" class="modal-form__submit">Отправить</button>
-                </form>
-                <button type="button" class="modal-window__button" data-modal-close>
-                    <svg width="11px" height="11px">
-                        <use href="./images/sprite.svg#icon-Vector"></use>
-                    </svg>
-                </button>
+                               </svg>
+                       </label>
+                       <label class="modal-form__label">
+                          <span class="modal-form__wrapper">Комментарий</span>
+                          <textarea name="user-message" class="modal-form__message" placeholder="Введите текст"></textarea>
+                        </label>
+                            <input id="check-policy" type="checkbox" class="modal-form__policy visually-hidden" name="policy" value="accept-policy">
+                        <label class="modal-form__label-policy" for="check-policy">
+                           Соглашаюсь с рассылкой и принимаю &nbsp;<a class="underline" href="#">Условия договора</a>
+                        </label>
+                        <button type="submit" class="modal-form__submit">Отправить</button>
+                    </form>
+                    <button type="button" class="modal-window__button" data-modal-close>
+                       <svg width="11px" height="11px">
+                            <use href="./images/sprite.svg#icon-Vector"></use>
+                        </svg>
+                    </button>
             </div>
         </div>
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
-
-</body>
+      </div>
+        <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
+    </body>
 </html>

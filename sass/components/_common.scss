@@ -8,7 +8,6 @@
 body {
   font-family: $main-font;
   font-style: normal;
-
   &.modal-open {
     overflow: hidden;
   }

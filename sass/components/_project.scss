@@ -104,8 +104,11 @@
   display: inline-block;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     text-decoration: none;
+    //    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    //      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 
@@ -114,12 +117,10 @@
   overflow: hidden;
   margin: 0 auto;
   color: #fff;
-  &:hover .overlay-wrap {
+  //transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .overlay-wrap,
+  &:focus .overlay-wrap {
     transform: translateY(0);
-  }
-  &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
 .overlay-wrap {
@@ -173,8 +174,23 @@
     font-size: 18px;
   }
 }
+
 .transition-hover {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project__animate:hover,
+.project__animate:focus {
+  text-decoration: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project__link:hover .project-list__signature,
+.project__link:focus .project-list__signature {
+  border-style: none;
+}
+.project__animate:hover .project-list__signature,
+.project__animate:focus .project-list__signature {
+  border-style: none;
 }

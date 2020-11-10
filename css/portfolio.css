@@ -642,7 +642,7 @@ p {
   text-decoration: none;
 }
 
-.project-link:hover {
+.project-link:hover, .project-link:focus {
   text-decoration: none;
 }
 
@@ -653,12 +653,9 @@ p {
   color: #fff;
 }
 
-.overlay-add:hover .overlay-wrap {
+.overlay-add:hover .overlay-wrap,
+.overlay-add:focus .overlay-wrap {
   transform: translateY(0);
-}
-
-.overlay-add:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .overlay-wrap {
@@ -727,6 +724,22 @@ p {
 
 .transition-hover {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project__animate:hover,
+.project__animate:focus {
+  text-decoration: none;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.project__link:hover .project-list__signature,
+.project__link:focus .project-list__signature {
+  border-style: none;
+}
+
+.project__animate:hover .project-list__signature,
+.project__animate:focus .project-list__signature {
+  border-style: none;
 }
 
 .footer {
